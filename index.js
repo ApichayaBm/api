@@ -1,7 +1,8 @@
-const express = require('express')
+const express = require('้')
 //import  express from 'express';
 const app = express()
-const PORT = 8080;
+const PORT = process.env.PORT || 3000;
+//const PORT = 8080;
 
 app.use(express.json());
 
@@ -90,21 +91,20 @@ const foods = [
             "price": "60",
             "image": "https://static.cdntap.com/tap-assets-prod/wp-content/uploads/sites/25/2022/03/stewed-pork-leg-on-rice-c.jpg"
           }
-        ]
+        ];
+        app.get('/foods', (req, res) => {
+          res.status(200).json(foods);
+      });
+      
+      app.listen(PORT, () => {
+          console.log(`Server is running on port ${PORT}`);
+      });
 
-app.get('/food', function (req, res) {
-    res.status(200).json(foods);
-})
-//app.listen(PORT, () => console.log('Server is running...'));
-
-// app.get('/test', function (req, res) {
-//     res.send({
-//         firstName: 'Apichaya',
-//         lastName: 'Thassamalee',
-//     });
-// });
-
-app.listen(3000);
+// app.get('/foods', function (req, res) {
+//     res.status(200).json(foods);
+// })
+// app.listen(PORT, () => console.log('Server is running...'));
+// app.listen();
 // const express = require('express');
 // const app = express();
 // const PORT = 8080;
