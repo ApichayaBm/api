@@ -1,8 +1,8 @@
-const express = require('้')
 //import  express from 'express';
+const express = require('express');
 const app = express()
-const PORT = process.env.PORT || 3000;
-//const PORT = 8080;
+//const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 
 app.use(express.json());
 
@@ -14,7 +14,7 @@ const foods = [
             "image": "https://media.lul.la/wp-content/uploads/2022/11/15170427/rice-with-stir-fried-pork-with-garlic-featured-1.jpg "
           },
           {
-            "name":  "ข้าวผัดกระเพราหมู",
+            "name":  "ข้าวผัดกะเพราหมู",
             "eng_name": "Fired rice with basil and pork",
             "price": "45",
             "image": "https://www.sgethai.com/wp-content/uploads/2023/05/AnyConv.com__86-3.webp"
@@ -92,13 +92,13 @@ const foods = [
             "image": "https://static.cdntap.com/tap-assets-prod/wp-content/uploads/sites/25/2022/03/stewed-pork-leg-on-rice-c.jpg"
           }
         ];
-        app.get('/foods', (req, res) => {
+        app.get('/foods', function (req, res)  {
           res.status(200).json(foods);
-      });
+        });
       
-      app.listen(PORT, () => {
-          console.log(`Server is running on port ${PORT}`);
-      });
+        app.listen(PORT, () => {
+            console.log(`Server is running...`);
+        });
 
 // app.get('/foods', function (req, res) {
 //     res.status(200).json(foods);
