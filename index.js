@@ -17,7 +17,7 @@ const foods = [
             "name":  "ข้าวผัดกะเพราหมู",
             "eng_name": "Fired rice with basil and pork",
             "price": "45",
-            "image": "https://www.sgethai.com/wp-content/uploads/2023/05/AnyConv.com__86-3.webp"
+            "image": "https://img.wongnai.com/p/400x0/2020/10/04/a6fd1a6ec5ff40abb1d4857c6b3ea47c.jpg"
           },
           {
             "name":  "ข้าวมันไก่",
@@ -35,7 +35,7 @@ const foods = [
             "name":  "แกงจืดเต้าหู้หมูสับ",
             "eng_name": "Clear Soup with Bean Curd and Minced Pork",
             "price": "40",
-            "image": "https://"
+            "image": "https://almocooking.com/wp-content/uploads/2019/10/1522410294640.jpg"
           },
           {
             "name":  "ผัดไท",
@@ -77,7 +77,7 @@ const foods = [
             "name":  "น้ำพริกอ่อง",
             "eng_name": "Spicy meat and tomato dip",
             "price": "40",
-            "image": "https://clubthaifood.com/wp-content/uploads/2023/10/AnyConv.com__%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B8%9C%E0%B8%B1%E0%B8%94%E0%B8%AB%E0%B8%A1%E0%B8%B9.webp"
+            "image": "https://www.cpbrandsite.com/contents/recipe/peffimmelmu911akjova1z4wre2ercb4t3cqo4we.png"
           },
           {
             "name":  "ขนมจีนน้ำยา",
